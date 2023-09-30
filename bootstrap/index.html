@@ -1,168 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/carrocel.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/carrocel.css">
 
-    <title>dragão</title>
+  <title>dragão</title>
 </head>
+
 <body>
-    
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
 
-    <header>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
+            viewBox="0 0 24 24">
+          </svg>
+          <strong>Album</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="first-slide w-100" src="img/dragao-1.jpg" alt="First slide">
         <div class="container">
-          <a href="#" class="navbar-brand d-flex align-items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" 
-            stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24">
-              </svg>
-            <strong>Album</strong>
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          
         </div>
       </div>
-    </header>
-  
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="first-slide" src="img/dragao-1.jpg" alt="First slide">
-          <div class="container">
-            <div class="carousel-caption text-left">
-              <h1>Manchete</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="second-slide" src="img/dragao-2.jpg" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Outra manchete</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="third-slide" src="img/dragao-3.jpg" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption text-right">
-              <h1>Outra manchete, pra garantir</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
+      <div class="carousel-item">
+        <img class="second-slide d-block w-100 " src="img/dragao-2.jpg" alt="Second slide">
+        <div class="container">
         </div>
       </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Voltar</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Avançar</span>
-      </a>
+      <div class="carousel-item">
+        <img class="third-slide" src="img/dragao-3.jpg" alt="Third slide">
+        <div class="container">
+        </div>
       </div>
-      
-        <main>
-        <div class="album py-5 bg-body-tertiary">
-          <div class="container">
-      
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                    </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Voltar</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Avançar</span>
+    </a>
+  </div>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" src="img/01.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Na ilha de Berk, os vikings dedicam a vida a combater e matar dragões. Soluço (Jay Baruchel), filho do chefe Stoico (Gerard Butler), não é diferente. Ele sonha em matar um dragão e provar seu valor ao pai, apesar da descrença geral. Um dia, por acaso, ele acerta um dragão que jamais foi visto, chamado Fúria da Noite.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                    <small class="text-muted">1h 38mins</small>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                    </div>
-                  </div>
-                </div>
+            </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="img/02.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text"></p>
+              <p class="card-text">Depois de convencer o seu vilarejo que os dragões não devem ser combatidos, Soluço convive com seu dragão Banguela, último da espécie Fúria da Noite. Estes animais passaram a integrar pacificamente a rotina dos moradores da ilha de Berk.</p>
+              <div class="d-flex justify-content-between align-items-center">
+        
+                <small class="text-muted">1h 48mins</small>
               </div>
-              <div class="col">
-                <div class="card shadow-sm">
-                  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                  <div class="card-body">
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                    </div>
-                  </div>
-                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img class="card-img-top" src="img/03.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Em Como Treinar o Seu Dragão 3 há um novo cenário no reino de Berk. Graças à amizade entre Soluço, o príncipe instado a assumir a liderança de seu povo, e Banguela, o Fúria da Noite que se torna o melhor amigo e fiel escudeiro do herdeiro, há uma integração total entre raças antes rivais de morte.</p>
+              <div class="d-flex justify-content-between align-items-center">
+              
+                <small class="text-muted">1h 44mins</small>
               </div>
-      
+            </div>
+          </div>
+        </div>
+        
         <hr class="featurette-divider">
+     
+          <div class="text-center">
+            <div>
+              <h2 class="featurette-heading">Conheça agora as classes de dragões</h2>
+            </div>
+          </div>
+        
+        
+        <hr class="featurette-divider">
+
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Primeiro título de featurezinhas. <span class="text-muted">Supreendente, não?!</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Classe Brasa</h2>
+            <p class="lead">Os dragões da Classe Brasa são cuspidores de fogo impetuosos. Esta classe inclui dragões que podem colocar fogo em si mesmos, como na maioria das espécies de dragões menores. Quando um dragão da Classe Brasa começa a perder seu fogo, é um sinal de que ele está morto, apesar de que suas chamas podem ser acessas ​​pelo veneno de uma Rainha Lagarta de Fogo ou pelo seu Gel-de-Pesadelo-Monstruoso.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="img/menos.png" src="img/dente.jpg">
           </div>
         </div>
 
         <hr class="featurette-divider">
 
         <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Aêêê, moleque! <span class="text-muted">Tá legal ou não tá?</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Classe Rocha</h2>
+            <p class="lead">Os dragões da Classe Rocha (mais conhecida como Classe Boulder) são robustos e estão ligados à terra. Eles podem comer pedras e, apesar de terem asas pequenas em relação ao corpo, são capazes de voar tão rápido e tão alto quanto a maioria dos dragões. </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="img/batatao.jpg">
+          </div>
         </div>
 
         <hr class="featurette-divider">
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">E, por último, essa aqui. <span class="text-muted">Xeque-mate!</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Classe Rastreadora</h2>
+            <p class="lead">A Classe Rastreadora é uma nova classe em Dragões: Corrida Até o Limite. Mas essa classe pode também receber o nome de Classe Pavor, cujo nome é mencionado em: O livro dos Dragões episódio de uma mini serie oficial de Como Treinar Seu Dragão, disponível na Netflix e em outras plataformas de Straming.</p>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="img/chifre.jpg">
           </div>
         </div>
 
         <hr class="featurette-divider">
+
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Classe Rastreadora</h2>
+            <p class="lead">Os dragões da Classe Afiada (mais conhecida como Classe Sharp) são convencidos, vaidosos, orgulhosos e todos eles possuem partes afiadas no corpo./p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="img/tesoura.jpg">
+          </div>
         </div>
 
+        <hr class="featurette-divider">
 
-      <footer class="container">
-        <p class="float-right"><a href="#">Voltar ao topo</a></p>
-        <p>&copy;Yasmin araujo - 2023&middot;</p>
-      </footer>
-    </main>
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Classe Marinha</h2>
+            <p class="lead">Os dragões da Classe Marinha vivem no oceano ou perto dele e, ao contrário de muitos dragões, eles não cospem fogo como seus ataques à distância e, apesar de muito poucos conseguirem, eles raramente o usam. Os dragões nessa classe são geralmente maiores que os das outras classes. Soluço também disse que um dragão da Classe Marinha não poderia ficar fora da água por muito tempo, mas isso é falso para alguns desses dragões aquáticos.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="img/tambor.jpg">
+          </div>
+        </div>
 
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading"> Classe relampago</h2>
+            <p class="lead">Os dragões da Classe Relâmpago são distinguidos pela velocidade incrível, mandíbula forte e extrema inteligência, assim como alta precisão, ataques poderosos, e uma habilidade única que permite que naveguem em seus ambientes/atmosfera respectivos. Os dragões nessa classe são alguns dos dragões mais raros, alguns ameaçados de extinção (Fúria da Noite por exemplo). Eles também são os mais difíceis de treinar, porém os mais leais quando treinados.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="img/estridente.jpg">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading"> Classe Misterio</h2>
+            <p class="lead">Pouco se sabe sobre os dragões da Classe Mistério devido ao quão furtivos e sorrateiros eles são. Os dragões nessa classe são geralmente mais temidos que aqueles em outras classes de dragão.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="img/cancao.jpg">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <footer class="container">
+          <p class="float-right"><a href="#">Voltar ao topo</a></p>
+          <p>&copy;Yasmin araujo - 2023&middot;</p>
+        </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
